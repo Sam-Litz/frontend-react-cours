@@ -1,4 +1,3 @@
-
 git config --global user.name "WiseM [Navigateur]"
 git config --global user.email "samuel.litzler39@gmail.com"
 
