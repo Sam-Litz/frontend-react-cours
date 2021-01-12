@@ -1,27 +1,42 @@
 export const MenuItems = [
   {
     title : 'Home',
-    url : '#',
+    url : '/',
     cName : 'nav-links',
   },
   {
-    title : 'Services',
-    url : '#',
+    title : 'Features',
+    url : '/features',
     cName : 'nav-links',
   },
   {
-    title : 'Products',
-    url : '#',
+    title : 'Associations',
+    url : '/associations',
     cName : 'nav-links',
   },
   {
-    title : 'Contact Us',
-    url : '#',
+    title : 'Network',
+    url : '/network',
     cName : 'nav-links',
   },
   {
-    title : 'Sign Up',
-    url : '#',
-    cName : 'nav-links-mobile',
+    title : 'Prices',
+    url : '/prices',
+    cName : 'nav-links',
+  },
+  {
+    title : 'Resources',
+    url : '/resources',
+    cName : 'nav-links',
+  },
+  {
+    title : 'Auth',
+    url : '/auth',
+    cName : 'nav-links',
+  },
+  {
+    title : 'Client',
+    url : '/me',
+    cName : 'nav-links',
   }
 ]
