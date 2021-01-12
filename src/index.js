@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import Home from './components/Page/Home';
+import Home from './components/Page/Home/Home';
 import Features from './components/Page/Features';
 import Associations from './components/Page/Associations';
 import Network from './components/Page/Network';
