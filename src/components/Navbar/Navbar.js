@@ -79,15 +79,8 @@ class NavBar extends Component {
                 </div>
               </li>
               {/* Connexion */}
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Connexion
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item">Action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item">Another action</a>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link"><Link to='/auth'>Connexion</Link></a>
               </li>
               {/* Client */}
               <li class="nav-item dropdown">
@@ -96,7 +89,21 @@ class NavBar extends Component {
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item">Informations personnels</a>
+                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item">Paramètres</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item">Informations personnels</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item">Paramètres</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item">Informations personnels</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item">Paramètres</a>
+                  <a class="dropdown-item">Informations personnels</a>
+                  <a class="dropdown-item">Paramètres</a>
+                  <a class="dropdown-item">Informations personnels</a>
+                  <a class="dropdown-item">Paramètres</a>
+
                 </div>
               </li>
             </ul>
