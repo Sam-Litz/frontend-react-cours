@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import Home from './components/Page/Home/Home';
+import Home from './components/Page/Home';
 import Features from './components/Page/Features';
 import Associations from './components/Page/Associations';
 import Network from './components/Page/Network';
@@ -9,7 +9,8 @@ import Prices from './components/Page/Prices';
 import Resources from './components/Page/Resources';
 import Auth from './components/Page/Auth';
 import Client from './components/Page/Client';
-import News from './components/Home/News';
+import News from './components/Modules/Home/News';
+//import SearchAsso from './components/Search/SearchAsso';
 
 
 import {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../Modules/Navbar/Navbar';
 // import {Link} from 'react-router-dom'
 import '../../css/Auth.css';
 import FormulaireRegister from '../Modules/Auth/FormulaireRegister';
