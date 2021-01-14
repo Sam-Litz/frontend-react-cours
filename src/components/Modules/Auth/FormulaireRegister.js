@@ -42,7 +42,6 @@ class FormulaireRegister extends Component {
         if(response.data != null){
           this.setState({userCreated: true});
         }
-        console.log(response);
       })
     }
   }
@@ -80,22 +79,22 @@ class FormulaireRegister extends Component {
           <div class="form-row font-weight-bold">
             <div class="form-group col">
               <label for="input-register-nom">Nom</label>
-              <input name="nom" type="text" class="form-control" id="input-register-nom" placeholder="Alphonse" value={this.state.inputs.nom} onChange={this.handleInputChange} required />
+              <input name="nom" type="text" class="form-control form-control-sm" id="input-register-nom" placeholder="Alphonse" value={this.state.inputs.nom} onChange={this.handleInputChange} required />
             </div>
             <div class="form-group col">
               <label for="input-register-prenom">Prénom</label>
-              <input name="prenom" type="text" class="form-control" id="input-register-prenom" placeholder="LAPIERRE" value={this.state.inputs.prenom} onChange={this.handleInputChange} required />
+              <input name="prenom" type="text" class="form-control form-control-sm" id="input-register-prenom" placeholder="LAPIERRE" value={this.state.inputs.prenom} onChange={this.handleInputChange} required />
             </div>
           </div>      
 
           <div class="form-group font-weight-bold">
             <label for="input-register-email">Email</label>
-            <input name="email" type="text" class="form-control" id="input-register-email" placeholder="email@domaine.xx" value={this.state.inputs.email} onChange={this.handleInputChange} required />
+            <input name="email" type="text" class="form-control form-control-sm" id="input-register-email" placeholder="email@domaine.xx" value={this.state.inputs.email} onChange={this.handleInputChange} required />
           </div>
 
           <div class="form-group font-weight-bold">
             <label for="input-register-password">Mot de passe</label>
-            <input name="password" type="password" class="form-control" id="input-register-password" placeholder="" value={this.state.inputs.password} onChange={this.handleInputChange} required />
+            <input name="password" type="password" class="form-control form-control-sm" id="input-register-password" placeholder="" value={this.state.inputs.password} onChange={this.handleInputChange} required />
           </div>
           {
             checkPasswordLength ? <p class="text-danger">Le mot de passe doit avoir au moins 5 caractères</p> : <p></p>
@@ -103,7 +102,7 @@ class FormulaireRegister extends Component {
 
           <div class="form-group font-weight-bold">
             <label for="input-register-confirm-password">Confirmer le mot de passe</label>
-            <input name="confirmPassword" type="password" class="form-control" id="input-register-confirm-password" placeholder="" value={this.state.inputs.confirmPassword} onChange={this.handleInputChange} required />
+            <input name="confirmPassword" type="password" class="form-control form-control-sm" id="input-register-confirm-password" placeholder="" value={this.state.inputs.confirmPassword} onChange={this.handleInputChange} required />
           </div>
 
           {
@@ -111,7 +110,7 @@ class FormulaireRegister extends Component {
           }
 
           <div class="form-group float-right">
-            <button type="submit" class="btn btn-primary" onClick={this.inscription}>S'incrire</button>
+            <button type="submit" class="btn btn-primary btn-sm" onClick={this.inscription}>S'incrire</button>
           </div>          
 
         </form>
