@@ -15,8 +15,14 @@ class ResultSearchAsso extends Component {
 		/*let ls = localStorage.getItem('resultSearchAsso')
 		ls = JSON.parse(ls)*/
 		let ls = {ls:localStorage.getItem('resultSearchAsso')}
-		ls = JSON.parse(ls)
-		console.log(ls)
+		if(ls){
+			try{
+				ls = JSON.parse(ls)
+				console.log(ls)
+			}catch(e){
+				console.error("erreur parsage");
+			}
+		}
 		//console.log(localStorage.getItem('resultSearchAsso'))
 	}
 

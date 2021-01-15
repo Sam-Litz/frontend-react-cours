@@ -10,16 +10,14 @@ class Home extends Component {
     return (
       <div className="Home">
         <Navbar />
-        <div class="container-fluid ">
-          <div class="row mx-2">
-            <div class="col-lg-6 border">
-              {/* composant news */}
-              <News />
-            </div>
-            <div class="col-lg-6 border">
-              {/* composant searchAsso */}
-              <SearchAsso />
-            </div>
+        <div class="row">
+          <div class="col-6 border">
+            {/* composant news */}
+            <News />
+          </div>
+          <div class="col-6 border">
+            {/* composant searchAsso */}
+            <SearchAsso />
           </div>
         </div>
       </div>
