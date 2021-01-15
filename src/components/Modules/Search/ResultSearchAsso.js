@@ -11,8 +11,13 @@ class ResultSearchAsso extends Component {
   }
 
   componentDidMount(){
-    // this.getUsers();
-  
+		// this.getUsers();
+		/*let ls = localStorage.getItem('resultSearchAsso')
+		ls = JSON.parse(ls)*/
+		let ls = {ls:localStorage.getItem('resultSearchAsso')}
+		ls = JSON.parse(ls)
+		console.log(ls)
+		//console.log(localStorage.getItem('resultSearchAsso'))
 	}
 
 
@@ -26,7 +31,7 @@ display(){
 	render() {
 		return (
 			<div id='ResultSearchAsso-component' class="row">
-				{localStorage.getItem('resultSearchAsso')}
+				{/*JSON.parse(localStorage.getItem('resultSearchAsso')).forEach(element => console.log(element))*/}
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">Card title</h5>

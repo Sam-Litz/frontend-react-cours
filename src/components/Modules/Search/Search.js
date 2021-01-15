@@ -30,7 +30,7 @@ constructor(props){
 					response.data.forEach(element => this.state.data.push(JSON.stringify(
 						{
 							'nom' : element.nom, 
-							'description' : element.description , 
+							'description' : element.description,
 							'lienSiteWeb' : element.lienSiteWeb
 						})))
 					// localStorage.removeItem('resultSearchAsso')
