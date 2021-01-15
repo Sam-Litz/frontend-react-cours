@@ -6,7 +6,7 @@ class ResultSearchAsso extends Component {
 	constructor(props){
 		super(props);
     this.state = {
-      assoList: "",
+      assoList: new Array(),
     };
   }
 
@@ -18,7 +18,20 @@ class ResultSearchAsso extends Component {
 		if(ls){
 			try{
 				ls = JSON.parse(ls)
-				this.setState({assoList: ls})
+				var newls = new Array();
+
+				//créer un array sans objet
+				for(var i in ls){
+					var arrayentries = new Array();
+					Object.entries(ls[i]).map(function (entries) {
+						var key_asso = entries[0]
+						var value_asso = entries[1]
+						arrayentries[key_asso] = value_asso
+						newls[i] = arrayentries
+					});
+				}
+
+				this.setState({assoList: newls})
 			}catch(e){
 				console.error("erreur parsage");
 			}
@@ -37,14 +50,16 @@ display(){
 	render() {
 		return (
 			<div id='ResultSearchAsso-component' class="row">
-				{console.log(this.state.assoList)}
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Pas grand chose</p>
-						<a href="#" class="btn btn-primary">Site Web</a>
-					</div>
-				</div>
+				{
+					this.state.assoList.map((element, i) =>
+						<div class="card assos-card mx-auto m-2">
+							<div class="card-body d-flex align-items-center flex-column bd-highlight text-center">
+								<h5 class="card-title font-weight-bold bd-highlight">{element.nom}</h5>
+								<p class="card-text bd-highlight my-auto">{element.description}</p>
+								<a href={element.lienSiteWeb} class="btn btn-primary bd-highlight mt-auto" target="_blank">Allez sur le site</a>
+							</div>
+						</div>
+					)}
 			</div>
 		)
 	}
