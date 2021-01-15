@@ -6,7 +6,7 @@ class ResultSearchAsso extends Component {
 	constructor(props){
 		super(props);
     this.state = {
-      assoList: [],
+      assoList: "",
     };
   }
 
@@ -14,11 +14,11 @@ class ResultSearchAsso extends Component {
 		// this.getUsers();
 		/*let ls = localStorage.getItem('resultSearchAsso')
 		ls = JSON.parse(ls)*/
-		let ls = {ls:localStorage.getItem('resultSearchAsso')}
+		let ls = localStorage.getItem('resultSearchAsso')
 		if(ls){
 			try{
 				ls = JSON.parse(ls)
-				console.log(ls)
+				this.setState({assoList: ls})
 			}catch(e){
 				console.error("erreur parsage");
 			}
@@ -37,7 +37,7 @@ display(){
 	render() {
 		return (
 			<div id='ResultSearchAsso-component' class="row">
-				{/*JSON.parse(localStorage.getItem('resultSearchAsso')).forEach(element => console.log(element))*/}
+				{console.log(this.state.assoList)}
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">Card title</h5>

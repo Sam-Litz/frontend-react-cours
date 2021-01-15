@@ -27,14 +27,9 @@ constructor(props){
 					// envoie la liste au resultSearchAsso
 					this.state.data = []
 					console.log("result : " + JSON.stringify(response.data));
-					response.data.forEach(element => this.state.data.push(JSON.stringify(
-						{
-							'nom' : element.nom, 
-							'description' : element.description,
-							'lienSiteWeb' : element.lienSiteWeb
-						})))
+					response.data.forEach(element => this.state.data.push(element))
 					// localStorage.removeItem('resultSearchAsso')
-					localStorage.setItem('resultSearchAsso',this.state.data)
+					localStorage.setItem('resultSearchAsso', JSON.stringify(this.state.data))
 				}
 			})
 		}else return
