@@ -61,7 +61,7 @@ class FormulaireRegister extends Component {
     const passwordDifferents = this.checkPassword();
     const checkPasswordLength = this.checkPasswordLength();
     return (
-      <div className="formulaire-component">
+      <div class="formulaire-component">
         <form>
           <div class="text-center">
             <h2>Inscription</h2>

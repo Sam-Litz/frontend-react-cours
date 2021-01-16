@@ -10,7 +10,7 @@ import FormulaireCreateAsso from '../Modules/Associations/FormulaireCreateAsso';
 class Auth extends Component {
   render() {
     return (
-      <div className="Auth">
+      <div class="Auth">
         <Navbar />
         <div class="row">
           <div class="col-4 m-1 border border-primary">

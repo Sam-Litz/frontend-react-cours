@@ -50,7 +50,7 @@ class FormulaireCreateAsso extends Component {
 
   render() {
     return (
-      <div className="formulaire-component">
+      <div class="formulaire-component">
         <form>
           <div class="text-center">
             <h2>Créer une assocation</h2>

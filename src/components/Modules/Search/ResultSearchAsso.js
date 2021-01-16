@@ -6,7 +6,7 @@ class ResultSearchAsso extends Component {
 	constructor(props){
 		super(props);
     this.state = {
-      assoList: new Array(),
+      assoList:  [],
     };
   }
 
@@ -18,11 +18,11 @@ class ResultSearchAsso extends Component {
 		if(ls){
 			try{
 				ls = JSON.parse(ls)
-				var newls = new Array();
+				var newls = [];
 
 				//créer un array sans objet
 				for(var i in ls){
-					var arrayentries = new Array();
+					var arrayentries = [];
 					Object.entries(ls[i]).map(function (entries) {
 						var key_asso = entries[0]
 						var value_asso = entries[1]

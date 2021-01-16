@@ -8,14 +8,14 @@ import SearchAsso from '../Modules/Search/SearchAsso';
 class Home extends Component {
   render() {
     return (
-      <div className="Home">
+      <div class="Home">  
         <Navbar />
         <div class="row">
-          <div class="col-6 border">
+          <div class="col-6 ">
             {/* composant news */}
             <News />
           </div>
-          <div class="col-6 border">
+          <div class="col-6 ">
             {/* composant searchAsso */}
             <SearchAsso />
           </div>

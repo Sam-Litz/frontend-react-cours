@@ -13,12 +13,8 @@ class SearchAsso extends Component {
 	render() {
 		return (
 			<div id='SearchAsso-component'>
-				<div>
 					<Search/>
-				</div >
-				<div>
 					<ResultSearchAsso/>
-				</div >
 			</div>
 		)
 	}

@@ -6,7 +6,7 @@ import '../../css/Prices.css';
 class Prices extends Component {
   render() {
     return (
-      <div className="Prices">
+      <div class="Prices">
         <Navbar />
         <center>Prices</center>
       </div>

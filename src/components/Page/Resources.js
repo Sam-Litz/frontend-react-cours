@@ -6,7 +6,7 @@ import '../../css/Features.css';
 class Features extends Component {
   render() {
     return (
-      <div className="Features">
+      <div class="Features">
         <Navbar />
         <center>Features</center>
       </div>

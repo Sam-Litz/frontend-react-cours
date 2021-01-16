@@ -40,7 +40,7 @@ class DeleteUser extends Component {
 
   render() {
     return (
-      <div className="formulaire-component">
+      <div class="formulaire-component">
         <h2>Supprimer un utilsateur</h2>
         {
           this.state.userList.map((u) => <p><strong>Email: </strong>{u.email}<button class="btn btn-danger btn-sm" onClick={(e) => this.deleteUser(u._id)}>Supprimer</button></p>)
