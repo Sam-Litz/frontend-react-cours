@@ -37,7 +37,7 @@ class FormulaireLogin extends Component {
           this.setState({userConnected: true});
           this.setState({userJWT: response.data.access_token});
         }
-        console.log(response);
+        // console.log(response);
       })
     }
   }
@@ -46,11 +46,11 @@ class FormulaireLogin extends Component {
 
   render() {
     return (
-      <div className="formulaire-component">
+      <div class="formulaire-component">
         <form>
           <div class="text-center">
             <h2>Connexion</h2>
-            <small>(Fonctionne pas)</small>
+            <small>(Fonctionne un peu pres)</small>
           </div>
           <hr/>    
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../../css/Search.css';
 
 import axios from 'axios'
-import ResultSearchAsso from './ResultSearchAsso';
+// import ResultSearchAsso from './ResultSearchAsso';
 //export const MContext = React.createContext();
 class Search extends Component {
 
@@ -20,27 +20,17 @@ constructor(props){
 	search = (e) => {
 		e.preventDefault();
 		let data = e.target.value
-		if(e.target.value.length >= 3){
+		if(data.length >= 3){
 			console.log("appel : " + e.target.value)
 			axios.get('http://localhost:3001/associations').then((response) => {
 				if(response.status){
 					// envoie la liste au resultSearchAsso
-					this.state.data = []
+					this.setState(data = [])
+					// this.state.data = []
 					console.log("result : " + JSON.stringify(response.data));
-					response.data.forEach(element => this.state.data.push(element.nom))
+					response.data.forEach(element => this.state.data.push(element))
 					// localStorage.removeItem('resultSearchAsso')
-					localStorage.setItem('resultSearchAsso',this.state.data)
-					
-					
-					
-					// console.log(response);
-					// this.props.data = response.data
-					// this.setState({
-					// 	data: e.target.value
-					// })
-					// <ResultSearchAsso data={this.state.users}/>
-					
-					// this.props.data.displayData();
+					localStorage.setItem('resultSearchAsso', JSON.stringify(this.state.data))
 				}
 			})
 		}else return

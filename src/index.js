@@ -9,7 +9,7 @@ import Prices from './components/Page/Prices';
 import Resources from './components/Page/Resources';
 import Auth from './components/Page/Auth';
 import Client from './components/Page/Client';
-import News from './components/Modules/Home/News';
+// import News from './components/Modules/Home/News';
 //import SearchAsso from './components/Search/SearchAsso';
 
 

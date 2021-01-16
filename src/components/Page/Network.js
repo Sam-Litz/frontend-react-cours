@@ -6,7 +6,7 @@ import '../../css/Network.css';
 class Network extends Component {
   render() {
     return (
-      <div className="Network">
+      <div class="Network">
         <Navbar />
         <center>Network</center>
       </div>

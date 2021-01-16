@@ -6,7 +6,7 @@ import '../../css/Client.css';
 class Client extends Component {
   render() {
     return (
-      <div className="Client">
+      <div class="Client">
         <Navbar />
         <center>Client</center>
       </div>
